@@ -14,16 +14,15 @@ definitions = {
 
 #Pas toucher !
 nb_def = len(definitions)
-
-cle = definitions.keys()
-i = 1
 print("\n-------------------------------------------------------------\n")
 
 while 0 < len(definitions):
-    cle = definitions.keys()
+    cle = list(definitions.keys())
     i = random.randrange(len(definitions))
     print("Définition de : "+cle[i])
-    x = raw_input()
+    x = input()
     print("Réponse : "+definitions.pop(cle[i]))
     print("\n-------------------------------------------------------------\n")
+
+input("FIN")
 
